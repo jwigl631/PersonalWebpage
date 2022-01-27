@@ -1,40 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="sample.jpg">
+    <title>Jayden Wigley's Personal Work Resume</title>
+    <link rel="icon" type="image/x-icon" href="gary.jpg">
 </head>
-<body>
-    <style>
-        body {
-          background-image: url();
-          background-repeat: no-repeat;
-          background-size: cover;
+<style>
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+	width: 960px;
+}
+
+nav, section {
+  float: left;
+}
+
+nav {
+  width: 200px;
+  margin-right: 10px;
+}
+
+section {
+  width: 500px;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: orangered;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header,
+nav,
+section {
+  border: 1px solid rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav, section {
+  padding: 20px;
+  text-align: left;
+  width: 450px;
+  height: 255px;
+}
+
+#footer {
+            position: fixed;
+            padding: 0px 0px 0px 0px;
+            bottom: 0;
+            width: 100%; 
+            height: 80px;
+            background: black;
         }
-        a:link {
-          color: red;
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        
-        a:visited {
-          color: red;
-          background-color: transparent;
-          text-decoration: none;
-        }
-        
-        a:hover {
-          color: blue;
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        
-        a:active {
-          color: gray;
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        </style>
-    <p style="color:white;">My name is Jayden Wigley and I am 17 years old, I have hobbies such as programming, gaming, and reading. My favorite color is orange and my favorite TV show is Breaking Bad. I currently have a job as a cook at Smashburger and my dream job is to be a full stack dev or game dev.</p>
-</body>
+
+</style>
+
+<div class="wrapper">
+  <h1>Personal Work Resume</h1>
+  <header>Jayden Wigley, 17 years old</header>
+  <nav>Education
+    <p>I am currently a Senior attending Gilbert High School, this is one of two schools that I go to. My overall GPA is ~3.6.</p>
+    <p>The other School I attend is EVIT PM for Computer Programming and Mobile Application Development. I am attending my final year, each day Evit ends at 2:35 PM.</p>
+    <p>The ceritifications I am expecting to get soon are in three different languages: 1 for Python, 1 for C#, and 1 for HTML 5</p>
+  </nav>
+  <section>Work Experience & Skills/Volunteer Work
+    <ul><li>Smashburger Cook</li>
+    <li>Rocket Fizz(Candy Store)</li>
+    <li>Feed My Starving Children</li>
+    <li>Park Clean Up Service</li>
+    <li>Boyscouts Of America</li>
+    <li>Programming Languages: C#, HTML5, Python</li>
+    <li>Tech Literate</li>
+    <li>Time Management</li>
+    <li>Cleaning</li>
+    </ul>
+  </section>
+</div>
+
+<div id="footer">
+  <p><a href="https://github.com/jwigl631">My Github</a></p>
+  <p><a href = "mailto:jiwgl631@evit.com?">
+    Contact Me
+    </a></p>
+</div>
 </html>
