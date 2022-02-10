@@ -2,20 +2,32 @@
 <!-- Jayden Wigley 
 Personal Webpage Resume Project
 1/25/22
+
+<p><a href="https://github.com/jwigl631">My Github</a></p>
+  <p>480-930-1536</p>
+  <p><a href = "mailto:jiwgl631@evit.com?">
+    Contact Me
+    </a></p>
+
 -->
 <html>
 <head>
     <title>Jayden Wigley's Personal Work Resume</title>
     <link rel="icon" type="image/x-icon" href="gary.jpg">
 </head>
+<script>
+  window.onload = function() {
+    var context = new AudioContext();
+  }
+</script>
 <style>
-.wrapper {
+.wrapper{
   width: 960px;
   margin: 0 auto;
 }
 
 header {
-	width: 960px;
+	width: 910px;
 }
 
 nav, section {
@@ -38,7 +50,7 @@ section {
 }
 
 body {
-  background: orangered;
+  background: black;
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -54,7 +66,7 @@ section {
 }
 
 header {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 nav, section {
@@ -64,19 +76,37 @@ nav, section {
   height: 255px;
 }
 
-#footer {
-            position: fixed;
-            padding: 0px 0px 0px 0px;
-            bottom: 0;
-            width: 100%; 
-            height: 80px;
-            background: black;
-        }
+.scary{
+  border: 1px solid rgba(255,255,255,0.8);
+}
 
+article{
+  padding: 20px;
+  text-align: center;
+  border: 10px;
+  width: 910px;
+  height: 500px;
+  border: 1px solid rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+  border-radius: 3px;
+  float: left;
+  margin-top: 25px;
+}
+.one{
+  border: 1px solid rgba(255,255,255,0.8);
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.two{
+  border: 1px solid rgba(255,255,255,0.8);
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
 </style>
 
 <div class="wrapper">
-  <h1>Personal Work Resume</h1>
   <header>Jayden Wigley, 17 years old</header>
   <nav>Education
     <p>I am currently a Senior attending Gilbert High School, this is one of two schools that I go to. My overall GPA is ~3.6.</p>
@@ -89,18 +119,27 @@ nav, section {
     <li>Feed My Starving Children</li>
     <li>Park Clean Up Service</li>
     <li>Boyscouts Of America</li>
-    <li>Programming Languages: C#, HTML5, Python</li>
+    <li>Programming Languages: C#, HTML5/CSS, Python</li>
     <li>Tech Literate</li>
     <li>Time Management</li>
     <li>Cleaning</li>
     </ul>
   </section>
+  <article><u>Projects</u>
+    <div class="one"><p>Webscraper(C#)</p> 
+      <p>This project scrapes the price of 5 different bitcoin virtual currency</p>
+      <a href="WebScraper.zip">download Web Scraper</a></div>
+    <div class = "two"><p>Login Application</p>
+      This project scrapes the price of 5 different bitcoin virtual currency</p>
+      <a href="LoginApplication.zip">download Login Application</a></div>
+      
+  </article>
 </div>
-
-<div id="footer">
-  <p><a href="https://github.com/jwigl631">My Github</a></p>
-  <p><a href = "mailto:jiwgl631@evit.com?">
-    Contact Me
-    </a></p>
-</div>
+  <p onclick="Play()";>DON'T CLICK HERE</p>
+<script>
+  function Play(){
+    var spook = new Audio("die.mp3");
+    spook.play();
+  }
+</script>
 </html>
