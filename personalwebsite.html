@@ -17,6 +17,9 @@ Personal Webpage Resume Project
 .wrapper{
   width: 960px;
   margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;    /* Footer height */
 }
 
 header {
@@ -92,14 +95,14 @@ article{
   margin-bottom: 10px;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  height:40px;
+footer {
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 90px;
+  clear: both;
+  color: black;
+  background-color: cyan;
 }
 
 </style>
@@ -123,14 +126,14 @@ article{
     <li>Cleaning</li>
     </ul>
   </section>
-  <article><u>Projects</u>
+  <article><u>Best Projects</u>
     <div class="one"><p>Webscraper(C#)</p> 
       <p>This project scrapes the price of 5 different bitcoin virtual currency</p>
       <a href="WebScraper.zip">download Web Scraper</a></div>
-    <div class = "two"><p>Login Application</p>
+    <div class = "two"><p>Login Application(C#)</p>
       This project scrapes the price of 5 different bitcoin virtual currency, made in C#</p>
       <a href="LoginApplication.zip">download Login Application</a></div>
-    <div class = "three"><p>Image Scraper</p>
+    <div class = "three"><p>Image Scraper(Python)</p>
       This project was a personal one made in Python, it allows you to scrape all of the images of off a website</p>
       <a href="ImageGrabber.zip">download Image Scraper</a></div>
     <div class = "four"><p>SQLite Database(Python)</p>
@@ -139,13 +142,11 @@ article{
   </article>
 </div>
 
-<div class="footer">
-  <p class="github"><a href="https://github.com/jwigl631">My Github</a></p>
-  <p class="phonenumber">480-930-1536</p>
-  <p class="email"><a href = "mailto:jiwgl631@evit.com?">
-    Contact Me(Email)
-    </a></p>
-</div>
+<footer>
+  <p>480-930-1536</p>
+  <p>jw3456u@gmail.com</p>
+  <p><a href="https://github.com/jwigl631">My Github</a></p>
+</footer>
 
   <p onclick="Play()";>DON'T CLICK HERE</p>
 <script>
@@ -153,5 +154,4 @@ article{
     var spook = new Audio("die.mp3");
     spook.play();
   }
-</script>
-</html>
+</script></html>
